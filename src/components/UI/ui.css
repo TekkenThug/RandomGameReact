@@ -1,0 +1,17 @@
+.ui-button {
+    padding: 8px 15px;
+    border: 2px solid #FFBC42;
+    color: #FFBC42;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.ui-button:hover {
+    cursor: pointer;
+    background-color: #FFBC42;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
