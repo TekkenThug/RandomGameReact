@@ -1,4 +1,5 @@
 import React from 'react';
+import GameCardCounter from './GameCardCounter';
 import './index.css';
 
 export default function GameCard({ title, score, cover, releaseDate }) {
@@ -16,12 +17,11 @@ export default function GameCard({ title, score, cover, releaseDate }) {
                       Release date: {releaseDate}
                   </span>
             </div>
-            
             {
-                score &&
-                <div className="game-card__score">
-                    {score}
-                </div>   
+                  score &&
+                    <div className="game-card__score">
+                        <GameCardCounter counter={score} />
+                    </div>
             }
         </div>
       </div>
