@@ -13,5 +13,24 @@
     cursor: pointer;
     background-color: #FFBC42;
     color: #000000;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.ui-input input {
+    border: 2px solid #FFBC42;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #FFBC42;
+    padding: 10px 32px 10px 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.ui-input input:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.ui-input input::placeholder {
+    color: #FFBC42;
+    opacity: .4;
 }
