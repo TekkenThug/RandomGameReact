@@ -1,0 +1,10 @@
+.random-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.random-game__description {
+    margin-right: 10px;
+    max-width: 380px;
+}

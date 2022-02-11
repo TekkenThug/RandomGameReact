@@ -26,18 +26,3 @@ body {
   padding: 40px;
   flex-direction: column;
 }
-
-.random__container {
-  display: flex;
-  align-items: center;
-}
-
-.random__description {
-  max-width: 380px;
-}
-
-.games-container {
-  max-height: 400px;
-  overflow-y: auto;
-}
-

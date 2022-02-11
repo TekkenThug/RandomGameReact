@@ -1,3 +1,8 @@
+.game-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
 .game-card {
     width: 320px;
     min-height: 180px;
@@ -34,6 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    width: 100%;
 }
 
 .game-card__title {
@@ -47,14 +53,35 @@
 }
 
 .game-card__score {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.game-count {
     width: 40px;
     height: 40px;
-    background-color: red;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
+}
+
+.game-count--green {
+    background-color: green;
+}
+
+.game-count--yellow {
+    background-color: #f4c430;
+}
+
+.game-count--orange {
+    background-color: orange;
+}
+
+.game-count--red {
+    background-color: red;
 }
 
 
