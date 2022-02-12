@@ -3,6 +3,8 @@ import GameCardCounter from './GameCardCounter';
 import './index.css';
 
 export default function GameCard({ title, score, cover, releaseDate }) {
+  const localDate = new Date(releaseDate).toLocaleDateString('ru-RU');
+
   return (
       <div
           className="game-card"
@@ -11,12 +13,10 @@ export default function GameCard({ title, score, cover, releaseDate }) {
           }}
       >
         <div className="game-card__content">
-            <div className="game-card__title">
-                  {title}
-                  <span className="game-card__date">
-                      Release date: {releaseDate}
-                  </span>
-            </div>
+              <h3 className="game-card__title">{title}</h3>
+              <span className="game-card__date">
+                  Release date: {localDate}
+              </span>
             {
                   score &&
                     <div className="game-card__score">
