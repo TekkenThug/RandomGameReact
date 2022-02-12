@@ -1,14 +1,17 @@
 .game-list {
-    max-height: 400px;
-    overflow-y: auto;
+    overflow-x: auto;
+    max-width: 1000px;
+    min-width: 360px;
+    display: flex;
+    margin: 20px 0;
 }
 
 .game-card {
-    width: 320px;
-    min-height: 180px;
+    flex: 0 0 360px;
+    height: 200px;
     padding: 30px 15px;
     border: 2px solid #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,10 +19,6 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-}
-
-.game-card:not(:last-child) {
-    margin-bottom: 10px;
 }
 
 .game-card::before {
@@ -37,14 +36,17 @@
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     width: 100%;
 }
 
 .game-card__title {
     font-size: 32px;
-    margin-right: 20px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 280px;
 }
 
 .game-card__date {

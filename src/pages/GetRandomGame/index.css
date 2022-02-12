@@ -2,9 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .random-game__description {
-    margin-right: 10px;
     max-width: 380px;
+}
+
+.random-game__games {
+    margin-right: auto;
 }
